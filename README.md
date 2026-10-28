@@ -1,36 +1,8 @@
 # Docker_LEMP
-2º DAW
-Despliegue de Aplicaciones Web
-Arquitecturas Dinámicas LEMP mediante DOCKER COMPOSE
-En el desarrollo de aplicaciones modernas, es fundamental recrear entornos de
-producción de forma fiel en las máquinas locales.
-La arquitectura LEMP (Linux, Nginx, MySQL y PHP) es una de las más utilizadas por
-su alto rendimiento y eficiencia.
-Mediante el uso de Docker Compose, los desarrolladores pueden definir en un
-único manifiesto YAML el comportamiento de múltiples contenedores, sus redes
-internas y sus dependencias, garantizando que el servidor web, el motor de
-procesamiento y la base de datos funcionen de manera integrada y aislada.
-• Diseñar una arquitectura multi-contenedor integrada que separe las
-responsabilidades de servicio web, procesamiento de aplicaciones y
-persistencia de datos.
-• Gestionar la comunicación interna entre contenedores mediante nombres
-de servicio y redes bridge.
-• Configurar entornos dinámicos mediante el uso de variables de entorno
-para la inicialización de bases de datos MySQL.
-• Implementar pruebas de conectividad entre servicios para validar el
-despliegue de la capa de negocio y la capa de datos.
-Requisitos del Entorno
-• Sistema operativo con Docker Engine y el plugin de Docker Compose
-instalado (Linux, Windows con WSL2 o macOS).
-• Editor de código profesional (ej: VS Code).
-• Cliente de base de datos o acceso a terminal para validación de logs.
-2º DAW
-Despliegue de Aplicaciones Web
-Tareas a Realizar
-Fase 1: Diseño del Manifiesto de Orquestación
+**Fase 1**: Diseño del Manifiesto de Orquestación
 El alumno deberá crear un archivo docker-compose.yml que orqueste tres servicios
 específicos:
-1. Nginx: Encargado de la recepción de tráfico HTTP y el servicio de archivos
+**1. Nginx**: Encargado de la recepción de tráfico HTTP y el servicio de archivos
 estáticos. Debe mapear el puerto 8085 del host al puerto 80 del contenedor
 y depender del servicio PHP.
 2. PHP-FPM: Procesador dedicado para la lógica de la aplicación PHP (imagen
